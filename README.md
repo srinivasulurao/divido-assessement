@@ -68,8 +68,7 @@ will use the following assessment criteria:
 
 ## Extra Credit
 
-Extra points if your code handles unexpected situations graciously and takes into account the plateu size when
-calculating movements
+Extra points if your code handles unexpected situations graciously.
 
 For more extra points make your code handle yaml files
 
