@@ -38,6 +38,8 @@ merge them together. We have the following requirements:
 3. Although there are libraries available for parsing configuration
    files in the way that we describe, we expect you not to use
    them; that would be defeating the purpose of this test.
+   You can use libraries to parse JSON but not to fetch data using
+   the dotted notation
 
 
 ## Assessment Criteria
