@@ -44,6 +44,8 @@ merge them together. We have the following requirements:
    library to parse the JSON, but not to fetch the data using the
    dot-separated path.
 
+4. Bonus points if you think ahead and the system you create is easily extensible to support different file types
+
 We have supplied example configuration files (in the `fixtures`
 folder) which your code should be able to handle.
 
