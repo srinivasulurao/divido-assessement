@@ -7,9 +7,7 @@ This particular challenge is focused around writing a parser
 for configuration files; more details on the exact scenario
 are below.
 
-We anticipate that you will spend around 2 hours working on
-this challenge. If you don't manage to complete everything in
-time, that's ok; it's not a race.
+Take your time doing this test, we value acurracy over speed!
 
 Once you've completed the challenge, please send your code to
 your HR representative; you may provide it either as a link to
@@ -45,6 +43,8 @@ merge them together. We have the following requirements:
    dot-separated path.
 
 4. Bonus points if you think ahead and the system you create is easily extensible to support different file types
+
+5. For even extra points dockerize the system 
 
 We have supplied example configuration files (in the `fixtures`
 folder) which your code should be able to handle.
