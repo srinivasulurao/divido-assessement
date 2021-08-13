@@ -19,8 +19,8 @@ For our (fictional) application to work correctly, we need to
 be able to load one or more configuration files from disk and
 merge them together. We have the following requirements:
 
-1. It must be possible to load multiple configuration files
-   at the same time, and have later files override settings
+1. It must be possible to specify multiple configuration files
+   to be loaded, and have later files override settings
    in earlier ones.
 
 2. It must be possible to retrieve parts of the configuration
