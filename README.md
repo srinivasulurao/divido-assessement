@@ -1,17 +1,19 @@
 # Coding Challenge (Configuration)
+Hi! If you're reading this, it's because you've been invited to take 
+a coding challenge for an engineering role at Divido.
 
-Hi! If you're reading this, it's because you've been invited
-to take a coding challenge for an engineering role at Divido.
+This assessment is focused around writing a parser for configuration 
+files.
 
-This particular challenge is focused around writing a parser
-for configuration files; more details on the exact scenario
-are below.
+We’ve outlined our evaluation criteria below, please consider these when 
+preparing yourself to complete the assessment. We favour accuracy over 
+speed, but for reference this assessment should take around 2-3 hours, 
+depending on your level and experience. 
 
-Take your time doing this test, we value acurracy over speed!
+Once you've completed the challenge, please send your code to your HR 
+representative; you may provide it either as a link to a repository on 
+GitHub (preferred), or as a ZIP file.
 
-Once you've completed the challenge, please send your code to
-your HR representative; you may provide it either as a link to
-a repository on GitHub (preferred), or as a ZIP file.
 
 ## Scenario
 
@@ -26,8 +28,35 @@ merge them together. We have the following requirements:
 2. It must be possible to retrieve parts of the configuration
    by a dot-separated path; this should work for both sections
    and for individual keys, no matter how deeply nested.
+   
+So, for the following configuration file:
+```json
+{
+  "environment": "production",
+  "database": {
+    "host": "mysql",
+    "port": 3306,
+    "username": "divido",
+    "password": "divido"
+  },
+  "cache": {
+    "redis": {
+      "host": "redis",
+      "port": 6379
+    }
+  }
+}
+```
 
-## Assumptions
+The key `database.host` should return the string `mysql` and the key `cache` should return the entire contents of the `cache` property.
+You can return nested values in whatever is appropriate for your application (eg: `arrays` for PHP, `list` or `tupple` for Python, etc).
+
+
+The assesment is based on a real live example that you might have to work on at Divido, there are no trick questions or hidden expectations.
+
+It is really just that, load JSON files, fetch values using a dot-separated path and write tests!
+
+## Notes
 
 1. All of the configuration files your code will process will
    be in JSON format.
@@ -39,12 +68,15 @@ merge them together. We have the following requirements:
 3. Although there are libraries available for parsing configuration
    files in the way that we describe, we expect you not to use them;
    that would be defeating the purpose of this test. You may use a
-   library to parse the JSON, but not to fetch the data using the
+   library to parse JSON, but not to fetch the data using the
    dot-separated path.
 
 4. Bonus points if you think ahead and the system you create is easily extensible to support different file types
 
 5. For even extra points dockerize the system 
+
+7. You do not need to provide an UI, your code, tests and instructions
+   on how to use the configuration library are enough.
 
 We have supplied example configuration files (in the `fixtures`
 folder) which your code should be able to handle.
