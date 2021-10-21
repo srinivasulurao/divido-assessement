@@ -56,6 +56,8 @@ The assesment is based on a real live example that you might have to work on at 
 
 It is really just that, load JSON files, fetch values using a dot-separated path and write tests!
 
+You do not have to create an API or a front end, a properly tested class or classes is enough
+
 ## Notes
 
 1. All of the configuration files your code will process will
